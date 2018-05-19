@@ -3,4 +3,7 @@ class WelcomeController < ApplicationController
   end
   def news
   end
+  def welcome
+    render json: "Welcome to this Page."
+  end
 end

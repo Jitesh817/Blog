@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/new' => 'welcome#news'
+  get 'welcome/wc' => 'welcome#welcome'
 
 
   resources :articles do
