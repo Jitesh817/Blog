@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/new' => 'welcome#news'
   get 'welcome/wc' => 'welcome#welcome'
-
+  get 'welcome/bye' => 'welcome#sayonara'
 
   resources :articles do
     resources :comments
