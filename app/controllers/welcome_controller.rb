@@ -6,7 +6,9 @@ class WelcomeController < ApplicationController
   def welcome
     render json: "Welcome to this Page."
   end
-  def sayonara
-    render json: "GoodBye, see you soon."
+  def work
+    a = 2
+    b = "go"
+    Resque.enqueue(PutQueue, a, b)
   end
 end
